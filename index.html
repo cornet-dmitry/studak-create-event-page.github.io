@@ -87,9 +87,9 @@
                 photo: photo,
                 rate: rate
             }
-            tg.sendData("");
-
-            tg.close(JSON.stringify(data));
+            
+            tg.sendData(JSON.stringify(data));
+            tg.close();
         })
     </script>
 
